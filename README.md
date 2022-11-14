@@ -8,7 +8,7 @@
 
 #### Day Challenges
 
-[Day 1: First Compose App]()\
+[Day 1: First Compose App](/Day1)\
 [Day 2:]()\
 [Day 3:]()\
 [Day 4:]()\
