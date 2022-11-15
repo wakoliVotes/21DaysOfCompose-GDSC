@@ -60,8 +60,8 @@ fun BlogApp (
             Column (
                 Modifier.padding(2.dp)
                     ) {
-                Text(text = "Votes Wakoli", fontSize = 16.sp)
-                Text(text = "15th November 2022", fontSize = 12.sp)
+                Text(text = "Votes Wakoli", fontSize = 14.sp)
+                Text(text = "15th Nov 22", fontSize = 10.sp)
                 
             }
         }
@@ -75,10 +75,4 @@ fun BlogApp (
             Text(text = newsFive, modifier = Modifier.padding(5.dp))
         }
     }
-}
-
-@Composable
-@Preview
-fun BlogAppPreview() {
-    BlogApp()
 }
