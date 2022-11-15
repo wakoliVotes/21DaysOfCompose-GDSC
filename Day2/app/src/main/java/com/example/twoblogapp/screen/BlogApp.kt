@@ -6,13 +6,13 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -22,27 +22,26 @@ import com.example.twoblogapp.R
 
 
 @Composable
-fun BlogApp (
-
-){
+fun BlogApp (){
     val headLine = "Exclusive: Bill Gates In Kenya To Hold Series of Public Engagements"
     val newsOne = "American Businessman and Microsoft Company owner Bill Gates is in Kenya, where he will hold a series of public engagements."
     val newsTwo = "On Tuesday, Gates will tour Makueni County and is expected to meet Governor Mutula Kilonzo at his office."
     val newsThree = "Healthcare is at the top of the Businessman's mission in Kenya. He is set to visit the Makueni Mother and Child hospital and later visit Kathonzweni Health Center where is is expected to meet health volunteers."
     val newsFour = " Gates will meet two farmers in Kathonzweni who are championing for Climate Change and are farming through irrigation."
     val newsFive = "On Thursday, November 17, Bill Gates is expected to give a talk on Innovating for Food Security and Climate Change in Africa. The event will be streamed live from the University of Nairobi"
-    // Column
+    // Column for all
     Column (
         modifier = Modifier
             .fillMaxSize()
             .fillMaxWidth()
             .background(Color.White)
+            .padding(16.dp)
             ) {
         Text(
             text = headLine,
             fontWeight = FontWeight.Bold,
             fontSize = 24.sp,
-        modifier = Modifier.padding(5.dp))
+        )
         Spacer(modifier = Modifier.height(10.dp))
         // Author information
         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -54,13 +53,16 @@ fun BlogApp (
                     .padding(5.dp),
                 painter = painterResource(id = R.drawable.pic),
                 contentDescription = null,
-                contentScale = ContentScale.FillWidth
             )
             Spacer(modifier = Modifier.width(10.dp))
             Column (
                 Modifier.padding(2.dp)
                     ) {
-                Text(text = "Votes Wakoli", fontSize = 14.sp)
+                Text(
+                    text = "Votes Wakoli",
+                    fontSize = 14.sp,
+                    color = MaterialTheme.colors.primary
+                )
                 Text(text = "15th Nov 22", fontSize = 10.sp)
                 
             }
