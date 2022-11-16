@@ -19,6 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.twoblogapp.R
+import com.example.twoblogapp.ui.theme.TwoBlogAppTheme
 
 
 @Composable
@@ -70,11 +71,38 @@ fun BlogApp (){
         Spacer(modifier = Modifier.height(10.dp))
         // News Paragraphs        
         Column {
+            // News Banner
+            Image(
+                painter =  painterResource(id = R.drawable.news_banner),
+                contentDescription = null 
+            )
+            // Paragraphs
             Text(text = newsOne, modifier = Modifier.padding(5.dp))
             Text(text = newsTwo, modifier = Modifier.padding(5.dp))
             Text(text = newsThree, modifier = Modifier.padding(5.dp))
             Text(text = newsFour, modifier = Modifier.padding(5.dp))
-            Text(text = newsFive, modifier = Modifier.padding(5.dp))
+//            Text(text = newsFive, modifier = Modifier.padding(5.dp))
         }
+        Row() {
+            Image(
+                painter = painterResource(
+                    id = R.drawable.news_banner2,
+                ),
+                contentDescription = null,
+                modifier = Modifier.height(200.dp)
+            )
+                Text(text = newsFive, modifier = Modifier.padding(5.dp))
+
+
+        }
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewBlogApp () {
+    TwoBlogAppTheme {
+        BlogApp()
     }
 }
