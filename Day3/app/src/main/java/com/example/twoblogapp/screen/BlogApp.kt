@@ -98,7 +98,7 @@ fun BlogApp (){
     }
 }
 
-
+/*
 @Preview(showBackground = true)
 @Composable
 fun PreviewBlogApp () {
@@ -106,3 +106,4 @@ fun PreviewBlogApp () {
         BlogApp()
     }
 }
+ */

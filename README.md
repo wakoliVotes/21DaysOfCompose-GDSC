@@ -9,7 +9,7 @@
 #### Day Challenges
 
 [Day 1: First Compose](/Day1)\
-[Day 2: Simple Blog](/Day2/)\
+[Day 2: Simple Blog](/Day2)\
 [Day 3: Adding Images](/Day3)\
 [Day 4:](/Day)\
 [Day 5:](/Day)\
