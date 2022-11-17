@@ -1,5 +1,6 @@
 package com.example.twoblogapp.screen
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -17,8 +18,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.twoblogapp.R
 import com.example.twoblogapp.ui.theme.TwoBlogAppTheme
+import java.text.SimpleDateFormat
+import java.util.*
 
 
+@SuppressLint("SimpleDateFormat")
 @Composable
 fun BlogApp (){
     val headLine = "Exclusive: Bill Gates In Kenya To Hold Series of Public Engagements"
@@ -27,6 +31,9 @@ fun BlogApp (){
     val newsThree = "Healthcare is at the top of the Businessman's mission in Kenya. He is set to visit the Makueni Mother and Child hospital and later visit Kathonzweni Health Center where is is expected to meet health volunteers."
     val newsFour = " Gates will meet two farmers in Kathonzweni who are championing for Climate Change and are farming through irrigation."
     val newsFive = "On Thursday, November 17, Bill Gates is expected to give a talk on Innovating for Food Security and Climate Change in Africa. The event will be streamed live from the University of Nairobi"
+    // Today's Date
+    val sdf = SimpleDateFormat("dd-MM-yyyy")
+    val currentDate = sdf.format(Date())
     // Column for all
     Column (
         modifier = Modifier
@@ -62,7 +69,7 @@ fun BlogApp (){
                     fontSize = 14.sp,
                     color = MaterialTheme.colors.primary
                 )
-                Text(text = "15th Nov 22", fontSize = 10.sp)
+                Text(text = currentDate, fontSize = 10.sp)
                 
             }
         }
@@ -81,7 +88,8 @@ fun BlogApp (){
             Text(text = newsFour, modifier = Modifier.padding(5.dp))
 //            Text(text = newsFive, modifier = Modifier.padding(5.dp))
         }
-        Row() {
+        Spacer(modifier = Modifier.height(10.dp))
+        Row {
             Image(
                 painter = painterResource(
                     id = R.drawable.news_banner2,
