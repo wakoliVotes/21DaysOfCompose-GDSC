@@ -8,27 +8,27 @@
 
 #### Day Challenges
 
-[Day 1: First Compose](/Day1)\
-[Day 2: Simple Blog](/Day2)\
-[Day 3: Adding Images](/Day3)\
-[Day 4:](/Day)\
-[Day 5:](/Day)\
-[Day 6:](/Day)\
-[Day 7:](/Day)\
-[Day 8:](/Day)\
-[Day 9:](/Day)\
-[Day 10:](/Day)\
-[Day 11:](/Day)\
-[Day 12:](/Day)\
-[Day 13:](/Day)\
-[Day 14:](/Day)\
-[Day 15:](/Day)\
-[Day 16:](/Day)\
-[Day 17:](/Day)\
-[Day 18:](/Day)\
-[Day 19:](/Day)\
-[Day 20:](/Day)\
-[Day 21:](/Day)
+- Day 1: - First Compose App
+- Day 2: - Simple Blog
+- Day 3: - Adding Images to Blog
+- Day 4: - Fixing Scroll Feature
+- Day 5: -
+- Day 6: -
+- Day 7: -
+- Day 8: -
+- Day 9: -
+- Day 10 - 
+- Day 11 - 
+- Day 12 - 
+- Day 13 - 
+- Day 14 - 
+- Day 15 - 
+- Day 16 - 
+- Day 17 - 
+- Day 18 - 
+- Day 19 - 
+- Day 20 - 
+- Day 21 -
 
 #### Useful Resources
 - []()
