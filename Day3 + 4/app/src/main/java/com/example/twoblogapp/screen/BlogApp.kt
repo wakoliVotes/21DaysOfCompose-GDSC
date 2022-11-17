@@ -1,9 +1,6 @@
 package com.example.twoblogapp.screen
 
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.MaterialTheme
@@ -37,6 +34,7 @@ fun BlogApp (){
             .fillMaxWidth()
             .background(Color.White)
             .padding(16.dp)
+            .verticalScroll(rememberScrollState())
             ) {
         Text(
             text = headLine,
@@ -98,7 +96,6 @@ fun BlogApp (){
     }
 }
 
-/*
 @Preview(showBackground = true)
 @Composable
 fun PreviewBlogApp () {
@@ -106,4 +103,3 @@ fun PreviewBlogApp () {
         BlogApp()
     }
 }
- */
