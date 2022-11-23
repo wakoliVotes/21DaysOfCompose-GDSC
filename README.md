@@ -12,7 +12,7 @@
 - Day 2: - Simple Blog
 - Day 3: - Adding Images to Blog
 - Day 4: - Fixing Scroll Feature
-- Day 5: -
+- Day 5: - Button + External Link
 - Day 6: -
 - Day 7: -
 - Day 8: -
